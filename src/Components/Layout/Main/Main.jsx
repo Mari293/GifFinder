@@ -23,7 +23,6 @@ export const Main = () => {
     })
   }
 
-  
   return (
     <main className='container_main'>
       <SearchBox wordSearch={gifs}/>
