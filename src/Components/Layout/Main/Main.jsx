@@ -25,13 +25,15 @@ export const Main = () => {
 
   
   return (
-    <>
+    <main className='container_main'>
       <SearchBox wordSearch={gifs}/>
-      {
-        infoCard.map(info =>(
-          <Card  key={info.id} urlImageCard={info.images.downsized_medium.url} titleCard={info.title}/>
-        ))
-      }
-    </>
+      <div className='container_cards'>
+        {
+          infoCard.map(info =>(
+            <Card  key={info.id} urlImageCard={info.images.downsized_medium.url} titleCard={info.title}/>
+          ))
+        }
+      </div>
+    </main>
   )
 }
