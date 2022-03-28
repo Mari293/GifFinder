@@ -3,6 +3,8 @@ import './SearchBox.css';
 
 export const SearchBox = () => {
   return (
-    <div>SearchBox</div>
+    <div className='container_search_box'>
+      <input className='search_box' type="search" placeholder='Write a word or phrase' />
+    </div>
   )
 }
